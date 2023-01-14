@@ -211,9 +211,7 @@ footer{
     opacity: 70%;
     
 }
-.hide{
-    display: none;
-}
+
 @media only screen and (max-width: 688px) {
     .banner{
         margin: 20px;
@@ -227,7 +225,9 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
     }
-   
+    nav ul{
+        flex-direction: column;
+    }
     .head-info ,
     .container-info {
         margin: 5px;
@@ -254,7 +254,7 @@ footer{
         margin-left: 100px;
     }
     .ctn-facts{
-        width: 370px;
+        width: 350px;
         margin: 10px;
         
     }
@@ -262,6 +262,9 @@ footer{
         margin: 5px;
         flex-direction: column;
         align-items: center;
+    }
+    .info{
+        width: 300px;
     }
     footer{
         padding: 5px;

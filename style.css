@@ -165,9 +165,42 @@ nav{
 }
             /* This section for bonus mark */
 
+.carts{
+    display: flex;
+    margin: 50px 50px;
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 10px;
+}
+#woman{
+    position: relative;
+    left: 300px;
+    z-index: 1;
+    rotate: -15deg;
+    transition: ease 1s;
+}
+#laptop{
+    position: relative;
+    z-index: 3;
 
-
-               
+}
+#house{
+    position: relative;
+    right: 300px;
+    rotate: 15deg;
+    z-index: 2;
+    transition: ease 1s;
+}
+.carts:hover #house{
+    
+    rotate: 0deg;
+    transform: translate(300px)
+}
+.carts:hover #woman{
+    rotate: 0deg;
+    transform: translate(-300px)
+}
+          
                     /* Some facts */
 
 .ctn-facts{
@@ -219,9 +252,7 @@ footer{
     opacity: 70%;
     
 }
-.hide{
-    display: none;
-}
+
 @media only screen and (max-width: 688px) {
     .nav-title{
         width: 200px;
@@ -249,6 +280,10 @@ footer{
         width: 100%;
         
     }
+    .hide{
+        display: none;
+    }
+   
     .container-title h1{
         font-size: 30px;
     }

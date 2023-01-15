@@ -166,6 +166,7 @@ nav{
             /* This section for bonus mark */
 
 .carts{
+    align-items: center;
     display: flex;
     margin: 50px 50px;
     /* flex-direction: column; */
